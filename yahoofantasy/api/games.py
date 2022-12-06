@@ -72,12 +72,14 @@ games["nba"]["2020"] = 402
 games["nba"]["2021"] = 410
 games["nba"]["2022"] = 418
 
+games["nhl"]["2022"] = 419
+
 
 def get_game_id(game, season):
     season = str(season)
     if game not in games:
         raise ValueError(
-            "{} is not a valid game, must be 'mlb', 'nba' or 'nfl'".format(game)
+            "{} is not a valid game, must be 'mlb', 'nba' or 'nfl' or 'nhl'".format(game)
         )
     if season not in games[game]:
         raise ValueError("{} is not a valid season for {}".format(season, game))

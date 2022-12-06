@@ -14,15 +14,15 @@ with open("yahoofantasy/__init__.py", "r") as fd:
 
 
 setuptools.setup(
-    name="yahoofantasy",
+    name="yahoofantasy-nhl",
     version=version,
-    author="Matt Dodge",
-    author_email="matt@dodge.com",
-    description="An SDK for the Yahoo! Fantasy Sports API",
+    author="Jack Adair",
+    author_email="jack@tmrrwinc.ca",
+    description="An SDK for the Yahoo! Fantasy Sports API with added NHL support",
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=reqs,
-    url="https://github.com/mattdodge/yahoofantasy",
+    url="https://github.com/jackadair/yahoofantasy-nhl",
     packages=setuptools.find_packages(),
     setup_requires=["setuptools_scm"],
     include_package_data=True,
